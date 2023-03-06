@@ -151,8 +151,8 @@ function App() {
   return (
     <section className="min-h-screen">
       {tenzies && <Confetti />}
-      <div className="max-w-2xl container mx-auto mt-24 p-8 bg-slate-900 border border-black">
-        <div className="bg-slate-200 rounded-lg px-12">
+      <div className="max-w-2xl container mx-auto mt-24 p-4 md:p-8 bg-slate-900 border border-black">
+        <div className="bg-slate-200 rounded-lg px-6 md:px-12">
           <div className="relative">
             <h1 className="text-[#2B283A] text-5xl text-center pt-8 pb-2 mb-8 font-bold leading-6 tracking-widest">
               Tenzies
@@ -186,11 +186,11 @@ function App() {
               </div>
             </div>
           </div>
-          <p className="px-12 pt-8 tracking-wide text-center text-lg">
+          <p className="px-0 pt-8 tracking-wide md:text-center text-lg md:px-12 md:pt-8">
             Roll until all dice are the same. Click each die to freeze it at its
             current value between rolls.
           </p>
-          <div className="px-8 py-8 grid grid-cols-5 gap-4 justify-items-center">
+          <div className="px-2 py-8 grid grid-cols-5 gap-x-16 justify-items-center md:px-8 md:py-8 md:gap-x-6">
             {diceElement}
           </div>
           <div className="flex flex-col items-center pb-12">
@@ -198,7 +198,7 @@ function App() {
             {allHeldSame ? (
               <button
                 onClick={rollDice}
-                className="roll-dice bg-[#5035FF] w-1/4 border rounded-md text-slate-200 tracking-wide px-6 py-2 transition delay-150"
+                className="roll-dice bg-[#5035FF] w-1/2  md:w-1/2 border rounded-md text-slate-200 tracking-wide px-6 py-2 transition delay-150"
               >
                 {tenzies ? "New Game" : "Roll"}
               </button>
@@ -209,7 +209,12 @@ function App() {
         </div>
       </div>
       <footer className="text-center italic">
-        Coded by <span><a target="_blank" href='https://github.com/DevPierre05'>Peter Osei</a></span>
+        Coded by{" "}
+        <span>
+          <a target="_blank" href="https://github.com/DevPierre05">
+            Peter Osei
+          </a>
+        </span>
       </footer>
     </section>
   );
