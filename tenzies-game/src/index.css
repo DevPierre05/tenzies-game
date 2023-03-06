@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.roll-dice:focus {
+    outline: none;
+}
+
+.roll-dice:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.face {
+    display: grid;
+    grid-template-areas:
+        "a . c"
+        "e g f"
+        "d . b";
+}
+
+.pip:nth-child(2) {
+    grid-area: b;
+}
+.pip:nth-child(3) {
+    grid-area: c;
+}
+.pip:nth-child(4) {
+    grid-area: d;
+}
+.pip:nth-child(5) {
+    grid-area: e;
+}
+.pip:nth-child(6) {
+    grid-area: f;
+}

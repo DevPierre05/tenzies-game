@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0;
+  font-family: 'Crimson Text', serif;
+}
+
+
+.face {
+  padding: 10px;
+  display: grid;
+  gap: .1rem;
+  grid-template-areas:
+    "a . c"
+    "e g f"
+    "d . b";
+  box-shadow: 10px 10px 26px -8px rgba(150,148,150,1);
+}
+
+.pip {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.pip:nth-child(2) {
+    grid-area: b;
+}
+.pip:nth-child(3) {
+    grid-area: c;
+}
+.pip:nth-child(4) {
+    grid-area: d;
+}
+.pip:nth-child(5) {
+    grid-area: e;
+}
+.pip:nth-child(6) {
+    grid-area: f;
+}
+.pip:nth-child(odd):last-child {
+    grid-area: g;
+}
+
+.side-bar {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
