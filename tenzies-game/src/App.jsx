@@ -145,7 +145,7 @@ function App() {
         min = gameRecords[i].time
       } 
     }
-    return `${min}s`;
+    return `${min}sec`;
   }
 
   return (
