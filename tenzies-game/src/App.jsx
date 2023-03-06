@@ -145,7 +145,7 @@ function App() {
         min = gameRecords[i].time
       } 
     }
-    return min;
+    return `${min}s`;
   }
 
   return (
@@ -166,10 +166,12 @@ function App() {
                   <strong>Rolls: </strong>
                   <span>5</span>
                 </p> */}
-                {gameRecords.length > 0 && <p className="text-xl italic text-sky-900">
-                  <strong>Time: </strong>
-                  <span>{recordDisplay()}</span>
-                </p>}
+                {gameRecords.length > 0 && (
+                  <p className="text-xl italic text-sky-900">
+                    <strong>Time: </strong>
+                    <span>{recordDisplay()}</span>
+                  </p>
+                )}
               </div>
 
               <div className="side-bar tracking-wide">
@@ -206,6 +208,9 @@ function App() {
           </div>
         </div>
       </div>
+      <footer className="text-center italic">
+        Coded by <span><a target="_blank" href='https://github.com/DevPierre05'>Peter Osei</a></span>
+      </footer>
     </section>
   );
 }
