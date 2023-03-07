@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { nanoid } from "nanoid";
 import Dice from './components/Dice'
-// import Confetti from 'react-confetti'
+import Confetti from 'react-confetti'
 import clickSound from "./sound/click.mp3"
 import cheerSound from "./sound/cheering-claps.wav"
 import rollSound from "./sound/rolling-dice.mp3"
@@ -150,7 +150,7 @@ function App() {
 
   return (
     <section className="min-h-screen">
-      {/* {tenzies && <Confetti />} */}
+      {tenzies && <Confetti />}
       <div className="max-w-2xl container mx-auto mt-24 p-4 md:p-8 bg-slate-900 border border-black">
         <div className="bg-slate-200 rounded-lg px-6 md:px-12">
           <div className="relative">
