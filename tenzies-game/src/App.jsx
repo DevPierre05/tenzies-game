@@ -159,7 +159,7 @@ function App() {
             </h1>
             <div className="flex justify-between items-center">
               <div className="record-stats tracking-wide">
-                <h2 className="uppercase text-green text-lg font-bold text-red-600 underline underline-offset-8">
+                <h2 className="uppercase text-green text-md md:text-lg font-bold text-red-600 underline underline-offset-8">
                   Record Score
                 </h2>
                 {/* <p className="text-lg italic text-sky-900">
@@ -176,17 +176,21 @@ function App() {
 
               <div className="side-bar tracking-wide">
                 <h2>
-                  <strong className="text-[#662a25] text-lg">Rolls 🎲: </strong>
+                  <strong className="text-[#662a25] text-md md:text-lg">
+                    Rolls 🎲:{" "}
+                  </strong>
                   {rollTimes}
                 </h2>
                 <h2>
-                  <strong className="text-[#662a25] text-lg">Timer ⏲: </strong>
+                  <strong className="text-[#662a25] text-md md:text-lg">
+                    Timer ⏲:{" "}
+                  </strong>
                   {timerRefractor()}
                 </h2>
               </div>
             </div>
           </div>
-          <p className="px-0 pt-8 tracking-wide md:text-center text-lg md:px-12 md:pt-8">
+          <p className="px-0 pt-8 tracking-wide md:text-center text-md md:text-lg md:px-12 md:pt-8">
             Roll until all dice are the same. Click each die to freeze it at its
             current value between rolls.
           </p>
