@@ -155,7 +155,7 @@ function App() {
         <div className="bg-slate-200 rounded-lg px-6 md:px-12">
           <div className="relative">
             <h1 className="text-[#2B283A] text-5xl text-center pt-8 pb-2 mb-8 font-bold leading-6 tracking-widest">
-              Tenzies
+              Tenzies 2023
             </h1>
             <div className="flex justify-between items-center">
               <div className="record-stats tracking-wide">
